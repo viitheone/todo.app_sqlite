@@ -1,0 +1,46 @@
+### GET /
+GET http://localhost:6969
+
+### register endpoint POST /auth/register
+POST http://localhost:6969/auth/register
+Content-Type: application/json
+
+{
+    "username": "ram@mail.com",
+    "password": "123"
+}
+
+### login endpoint POST /auth/login
+POST http://localhost:6969/auth/login
+Content-Type: application/json
+
+{
+    "username": "ram@mail.com",
+    "password": "123"
+}
+
+### Fetch all todos GET /TODOS (protected)
+GET http://localhost:6969/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU5NjA4OTc1LCJleHAiOjE3NTk2OTUzNzV9.IZa8F-vBbmCiD6stIYMnHPmhJWoRPqF4RQv30UTy940
+
+### Create a new todo POST /TODOS (protected)
+POST http://localhost:6969/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU5NjA4OTc1LCJleHAiOjE3NTk2OTUzNzV9.IZa8F-vBbmCiD6stIYMnHPmhJWoRPqF4RQv30UTy940
+Content-Type: application/json
+
+{
+    "task": "Finish the DBMS Assignment."
+}
+
+### Update a todo PUT /TODOS/:ID (protected)
+PUT http://localhost:6969/todos/2?page=1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU5NjA4OTc1LCJleHAiOjE3NTk2OTUzNzV9.IZa8F-vBbmCiD6stIYMnHPmhJWoRPqF4RQv30UTy940
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+### Delete a todo DELETE /TODOS/:ID (protected)
+DELETE http://localhost:6969/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU5NjA4OTc1LCJleHAiOjE3NTk2OTUzNzV9.IZa8F-vBbmCiD6stIYMnHPmhJWoRPqF4RQv30UTy940
