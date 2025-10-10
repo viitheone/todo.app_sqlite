@@ -16,6 +16,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 :root {
     --background-primary: white;
     --background-secondary: '';
@@ -45,7 +46,7 @@
     --gradient-end: #80ffea;
 
     --border-primary: #f1f5f9;
-    --border-secondary: #bed1e7;
+    --border-secondary: #948979;
     --border-highlight: #64748b;
     --border-tertiary: '';
 
@@ -65,7 +66,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-primary: #171c22;
+        --background-primary: #222831;
         --background-secondary: #0e101e;
         --background-tertiary: #121424;
         --background-accent: '';
@@ -93,8 +94,8 @@
         --gradient-end: #DFD0B8;
 
         --border-primary: #29325b;
-        --border-secondary: #323c71;
-        --border-highlight: #4649af;
+        --border-secondary: #948979;
+        --border-highlight: #DFD0B8;
         --border-tertiary: '';
 
         --shadow-dark: '';
